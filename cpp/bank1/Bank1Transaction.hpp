@@ -1,26 +1,27 @@
 #include <string>
 
 namespace com {
-    namespace bank1 {
-        namespace integration {
-            class Bank1Transaction
-            {
-            public:
-                Bank1Transaction(double amount, int type, std::string text);
-                virtual ~Bank1Transaction() = 0;
-                double getAmount();
-                int getType();
-                std::string getText();
-            
-            public:
-                static int TYPE_CREDIT;
-                static int TYPE_DEBIT;
-            
-            private:
-                double amount;
-                int type;
-                std::string text;
-            };
-        };
-    }
+namespace bank1 {
+namespace integration {
+
+class Bank1Transaction
+{
+public:
+    Bank1Transaction(double amount, int type, std::string text);
+    double getAmount();
+    int getType();
+    std::string getText();
+
+public:
+    const static int TYPE_CREDIT = 1;
+    const static int TYPE_DEBIT = 2;
+
+private:
+    double m_amount;
+    int m_type;
+    std::string m_text;
+};
+
+};
+}
 }
