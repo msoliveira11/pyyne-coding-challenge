@@ -1,3 +1,6 @@
+#ifndef BANK2_ACCOUNT_BALANCE_HPP
+#define BANK2_ACCOUNT_BALANCE_HPP
+
 #include <string>
 
 namespace com {
@@ -18,3 +21,5 @@ private:
 }
 }
 }
+
+#endif

@@ -1,4 +1,4 @@
-#include "Bank2AccountBalance.hpp"
+#include <bank_interfaces/bank2/Bank2AccountBalance.hpp>
 
 using namespace com::bank2::integration;
 

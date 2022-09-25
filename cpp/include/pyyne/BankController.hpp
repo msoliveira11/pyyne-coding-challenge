@@ -1,4 +1,5 @@
-
+#ifndef BANK_CONTROLLER_HPP
+#define BANK_CONTROLLER_HPP
 
 namespace com {
 namespace pyyne {
@@ -8,16 +9,14 @@ namespace bank {
 class BankController 
 {
 public:
-    void printBalances() {
-        // implement to pull balances
-    }
+    void printBalances();
 
-    void printTransactions() {
-        // implement to pull transactions
-    }
+    void printTransactions();
 };
 
 } // namespace bank
 } // namespace challenge
 } // namespace pyyne
 } // namespace com
+
+#endif

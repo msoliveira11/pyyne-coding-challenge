@@ -1,4 +1,7 @@
-#include "Bank2AccountTransaction.hpp"
+#ifndef BANK2_ACCOUNT_TRANSACTION_CPP
+#define BANK2_ACCOUNT_TRANSACTION_CPP
+
+#include <bank_interfaces/bank2/Bank2AccountTransaction.hpp>
 
 using namespace com::bank2::integration;
 
@@ -19,3 +22,5 @@ TRANSACTION_TYPES Bank2AccountTransaction::getType() {
 std::string Bank2AccountTransaction::getText() {
     return m_text;
 }
+
+#endif

@@ -1,4 +1,4 @@
-#include "Bank1Transaction.hpp"
+#include <bank_interfaces/bank1/Bank1Transaction.hpp>
 
 using namespace com::bank1::integration;
 

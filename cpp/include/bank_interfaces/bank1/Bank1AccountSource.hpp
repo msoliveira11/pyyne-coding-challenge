@@ -1,8 +1,11 @@
+#ifndef BANK1_ACCOUNT_SOURCE_HPP
+#define BANK1_ACCOUNT_SOURCE_HPP
+
 #include <string>
 #include <list>
 #include <chrono>
 #include "Bank1Transaction.hpp"
-#include <date.hpp>
+#include <common/Date.hpp>
 
 namespace com {
 namespace bank1 {
@@ -23,3 +26,4 @@ public:
 };
 }
 }
+#endif

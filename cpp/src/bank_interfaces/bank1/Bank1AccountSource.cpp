@@ -1,4 +1,4 @@
-#include "Bank1AccountSource.hpp"
+#include <bank_interfaces/bank1/Bank1AccountSource.hpp>
 
 using namespace com::bank1::integration;
 
