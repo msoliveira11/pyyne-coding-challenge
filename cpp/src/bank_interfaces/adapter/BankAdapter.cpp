@@ -4,7 +4,7 @@ using namespace com;
 using namespace com::bank1::integration;
 using namespace com::bank2::integration;
 
-BankAdapter::BankAdapter(Bank1AccountSource* bank1) {
+BankAdapter::BankAdapter(std::shared_ptr<Bank1AccountSource> bank1) {
     m_returnAccountBalance = [bank1] (long accountId) -> AccountBalance {
         AccountBalance accountBalanceToBeReturned;
         accountBalanceToBeReturned.balance = bank1->getAccountBalance(accountId);
@@ -25,7 +25,7 @@ BankAdapter::BankAdapter(Bank1AccountSource* bank1) {
     };
 }
 
-BankAdapter::BankAdapter(Bank2AccountSource* bank2) {
+BankAdapter::BankAdapter(std::shared_ptr<Bank2AccountSource> bank2) {
         m_returnAccountBalance = [bank2] (long accountId) -> AccountBalance {
         AccountBalance accountBalanceToBeReturned;
         accountBalanceToBeReturned.balance = (bank2->getBalance(accountId)).getBalance();
