@@ -17,6 +17,9 @@ namespace bank {
 typedef std::vector<long> accountIdsVector;
 typedef std::vector<accountIdsVector> bankAccountVector;
 
+/* This class was part of the code available to start the solution.
+   I used it to fill the missing information needed to simulate the application.
+*/
 class BankController 
 {
 public:

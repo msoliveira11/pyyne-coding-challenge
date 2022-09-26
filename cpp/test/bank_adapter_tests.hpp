@@ -10,6 +10,7 @@ using namespace com::bank2::integration;
 std::shared_ptr<Bank1AccountSource> m_bank1AccountSourcePtr;
 std::shared_ptr<Bank2AccountSource> m_bank2AccountSourcePtr;
 
+// Test if the adapter is getting the correct balances from both banks
 bool getBalanceTest() {
 
     m_bank1AccountSourcePtr = std::make_shared<Bank1AccountSource>();
@@ -28,6 +29,7 @@ bool getBalanceTest() {
     return true;
 }
 
+// Test if the adapter is getting the correct transactions from both banks
 bool getTransactionsTest() {
     m_bank1AccountSourcePtr = std::make_shared<Bank1AccountSource>();
     m_bank2AccountSourcePtr = std::make_shared<Bank2AccountSource>();

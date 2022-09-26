@@ -10,6 +10,7 @@
 
 namespace com {
 
+/* Structs used to unify the data gathered from all banks needed */
 struct AccountBalance {
     double balance;
     std::string currency;
@@ -21,7 +22,14 @@ struct Transaction {
     std::string description;
 };
 
+/* Pluggable Adapter Pattern Implementation
+   The intent was to add constructors that receive pointers from 
+   distinct banks, and are able to automatically translate all interfaces
+   into a single interface by using lambda functions.
+   This class does not store or keep any information from the banks.
+*/
 class BankAdapter {
+
 private:
     std::function<AccountBalance(long)> m_returnAccountBalance;
     std::function<std::list<Transaction>(long, Date, Date)> m_returnTransactions;

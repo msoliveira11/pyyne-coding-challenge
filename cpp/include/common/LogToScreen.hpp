@@ -1,3 +1,5 @@
+/* Auxiliary file to make printing to screen easier and less verbose */
+
 #ifndef LOG_TO_SCREEN_HPP
 #define LOG_TO_SCREEN_HPP
 
