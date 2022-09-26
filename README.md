@@ -18,7 +18,7 @@ There is a Dockerfile in this directory that allows you to create a container ba
 containing all dependencies needed.
 
 Steps:
-2.1 - Run: $ sudo ocker build -t pyyne .
+2.1 - Run: $ sudo docker build -t pyyne .
 2.2 - Run: $ sudo docker container run -it pyyne /usr/bin/bash
 2.3 - Inside container, run: $ cd /workspace/; ./Makefile.sh
 
