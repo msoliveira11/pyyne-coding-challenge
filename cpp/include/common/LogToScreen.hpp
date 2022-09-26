@@ -3,17 +3,16 @@
 
 #include <iostream>
 #include <iomanip>
+#include <bank_interfaces/adapter/BankAdapter.hpp>
 
-void logToScreen(std::string outputString) {
-    std::cout << outputString << std::endl;
-}
+void logToScreen(std::string outputString);
 
-void logToScreen(double outputValue) {
-    std::cout << std::fixed << std::setprecision(2) << outputValue << std::endl;
-}
+void logToScreen(double outputValue);
 
-void logToScreen(int outputValue) {
-    std::cout << std::to_string(outputValue) << std::endl;
-}
+void logToScreen(int outputValue);
+
+void logToScreen(long accountId, double balanceValue, std::string currency);
+
+void logToScreen(long accountId, com::Transaction transaction);
 
 #endif

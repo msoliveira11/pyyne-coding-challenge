@@ -5,6 +5,7 @@ target_link_libraries(unit_tests
         bank1
         bank2
         bankAdapter
+        common
 )
 
 target_include_directories(${PROJECT_NAME}

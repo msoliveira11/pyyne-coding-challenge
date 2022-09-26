@@ -38,17 +38,13 @@ bool getTransactionsTest() {
     long fakeAccountId = 123456;
     Date fakeFromDate;
     Date fakeToDate;
-
     
     for (const auto& transaction : bank1Adapter.getTransactions(fakeAccountId, fakeFromDate, fakeToDate)) {
-        logToScreen(transaction.amount);
-        logToScreen(transaction.description);
-        logToScreen(transaction.type);
+        logToScreen(fakeAccountId, transaction);
+
     }
     for (const auto& transaction : bank2Adapter.getTransactions(fakeAccountId, fakeFromDate, fakeToDate)) {
-        logToScreen(transaction.amount);
-        logToScreen(transaction.description);
-        logToScreen(transaction.type);
+        logToScreen(fakeAccountId, transaction);
     }
 
     return true;

@@ -8,9 +8,9 @@ namespace bank2 {
 namespace integration {
 
 enum TRANSACTION_TYPES {
-                            DEBIT,
-                            CREDIT
-                        };
+                    DEBIT,
+                    CREDIT
+};
 
 class Bank2AccountTransaction 
 {

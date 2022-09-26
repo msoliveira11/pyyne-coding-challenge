@@ -17,7 +17,7 @@ struct AccountBalance {
 
 struct Transaction {
     double amount;
-    int type;
+    std::string type;
     std::string description;
 };
 
@@ -25,6 +25,8 @@ class BankAdapter {
 private:
     std::function<AccountBalance(long)> m_returnAccountBalance;
     std::function<std::list<Transaction>(long, Date, Date)> m_returnTransactions;
+    std::string translateBank1Type(int transactionType);
+    std::string translateBank2Type(int transactionType);
 
 public:
     BankAdapter(std::shared_ptr<bank1::integration::Bank1AccountSource> bank1);

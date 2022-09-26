@@ -7,11 +7,6 @@ namespace com {
 namespace bank1 {
 namespace integration {
 
-// enum TRANSACTION_TYPE {
-//     TYPE_CREDIT = 1,
-//     TYPE_DEBIT = 2
-// };
-
 class Bank1Transaction
 {
 public:

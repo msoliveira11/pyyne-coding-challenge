@@ -1,10 +1,6 @@
-add_executable(${PROJECT_NAME} main.cpp)
+add_library(common LogToScreen.cpp)
 
-target_link_libraries(${PROJECT_NAME} 
-        bankController
-        common)
-
-target_include_directories(${PROJECT_NAME}
+target_include_directories(common
     PRIVATE
        ${CMAKE_CURRENT_SOURCE_DIR}
     PUBLIC
